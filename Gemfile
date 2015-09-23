@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', path: "/Users/ffloyd/.rvm/gems/ruby-2.2.3/bundler/gems/rails-9c55ff564d21"
+gem 'rails', path: "~/Code/rails"
 gem 'sprockets-rails', github: "rails/sprockets-rails"
 gem 'sprockets', github: "rails/sprockets"
 gem 'sass-rails', github: "rails/sass-rails"
