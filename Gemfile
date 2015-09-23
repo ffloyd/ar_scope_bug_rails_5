@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', path: "~/Code/rails"
+gem 'rails', path: "~/Code/rails" # there must be edge rails
 gem 'sprockets-rails', github: "rails/sprockets-rails"
 gem 'sprockets', github: "rails/sprockets"
 gem 'sass-rails', github: "rails/sass-rails"
