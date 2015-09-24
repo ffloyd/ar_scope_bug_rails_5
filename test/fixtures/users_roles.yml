@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+dhh_is_maintainer:
   user: dhh
   role: maintainer
 
-two:
+aaron_is_tenderlover:
   user: aaron
   role: tenderlover
+
+aaron_is_maintainer:
+  user: aaron
+  role: maintainer

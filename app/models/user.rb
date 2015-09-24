@@ -8,8 +8,11 @@ class User < ActiveRecord::Base
     joins(:roles).where(roles: { name: role_name })
   }
 
-  scope :useless_join, lambda {
-    subquery_sql = User.select('users.id AS user_id').to_sql
-    joins("INNER JOIN (#{subquery_sql}) subquery ON subquery.user_id = users.id")
-  }
+  scope :unscope_via_all, -> { User.all }
+
+  class << self
+    def unscope_via_all_as_class_method
+      User.all
+    end
+  end
 end
