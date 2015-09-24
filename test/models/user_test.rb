@@ -1,10 +1,6 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  def assert_array_match(first, second)
-    assert_equal first.to_a.sort, second.to_a.sort
-  end
-
   test 'scope #with_role works' do
     assert_array_match User.with_role('tenderlover'), [users(:aaron)]
     assert_array_match User.with_role('maintainer'), [users(:aaron), users(:dhh)]
